@@ -11,30 +11,57 @@ html, body {
 .container{
     display: grid;
     grid-template-rows: 2fr 8fr;
-    grid-template-columns: 2fr 8fr;
+    grid-template-columns: 1.7fr 8fr;
     height: 100%;
+    font-family: Roboto , 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .sidebar{
-    color: white;
+    color:whitesmoke;
     grid-row: 1 / 3 ;
-    background-color:#1c4670;
+    background-color:rgb(46, 43, 43);
     padding: 20px;
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
+    /* transition: all; */
 }
+
+/* .hovering{
+    transform: scale(1.01);
+} */
+
+
+.dash{
+    font-weight: bolder;
+    font-size: 40px;    
+}
+
+.dash img{
+    height: 1.1em;
+    width: 1em;
+}
+
 
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0.5em;
+    
 }
 
-.dash{
-    font-weight: bolder;
-    font-size: xx-large;
+li{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 23px;
+}
+
+li img{
+    height: 1em;
+
 }
 
 .header{
